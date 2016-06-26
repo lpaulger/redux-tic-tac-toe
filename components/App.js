@@ -1,12 +1,12 @@
 import React from 'react'
 
 import CurrentPlayer from './CurrentPlayer'
-import GameBoard from './GameBoard'
+import ActionGameBoard from '../containers/ActionGameBoard'
 
 const App = () => (
   <div>
     <CurrentPlayer />
-    <GameBoard />
+    <ActionGameBoard />
   </div>
 )
 

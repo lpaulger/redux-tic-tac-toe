@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import { GameBoardClicked } from '../actions'
+import { gameBoardClicked } from '../actions'
 import GameBoard from '../components/GameBoard'
 
 const mapStateToProps = (state) => {
   return {
-    text: state
+    text: state.gameboard
   };
 }
 
