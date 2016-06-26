@@ -1,22 +1,6 @@
-let nextTodoId = 0
-export const addTodo = (text) => {
+export const GameBoardClicked = (text) => {
   return {
-    type: 'ADD_TODO',
-    id: nextTodoId++,
+    type: 'GAME_BOARD_CLICKED',
     text
-  }
-}
-
-export const setVisibilityFilter = (filter) => {
-  return {
-    type: 'SET_VISIBILITY_FILTER',
-    filter
-  }
-}
-
-export const toggleTodo = (id) => {
-  return {
-    type: 'TOGGLE_TODO',
-    id
   }
 }

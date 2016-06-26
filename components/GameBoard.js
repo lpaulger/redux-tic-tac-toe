@@ -1,10 +1,8 @@
 import React from 'react'
 
-
-
-const GameBoard = () => (
-  <div>
-    I'm the Game Board
+const GameBoard = ({onClick, text}) => (
+  <div onClick={onClick}>
+    { text }
   </div>
 )
 
