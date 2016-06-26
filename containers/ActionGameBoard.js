@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { nextPlayer } from '../actions'
+import { nextPlayer,onTileClick  } from '../actions'
 import GameBoard from '../components/GameBoard'
 
 const mapStateToProps = (state) => {
@@ -10,9 +10,13 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: () => {
+    onClick: (id, symbol) => {
       // change turn to next player
+      console.log(id)
       dispatch(nextPlayer("hello"))
+    },
+    onTileClick: (id, symbol) => {
+      dispatch(onTileClick(id, symbol))
     }
   }
 }

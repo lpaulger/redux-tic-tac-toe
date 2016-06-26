@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Tile = ({tile}) => (
-  <div>
+const Tile = ({tile, onClick}) => (
+  <div onClick={onClick}>
     {tile.symbol}
   </div>
 )
