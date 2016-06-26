@@ -1,8 +1,12 @@
 import React from 'react'
 
+import CurrentPlayer from './CurrentPlayer'
+import GameBoard from './GameBoard'
+
 const App = () => (
   <div>
-    <h1>Hello World</h1>
+    <CurrentPlayer />
+    <GameBoard />
   </div>
 )
 
