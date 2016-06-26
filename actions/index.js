@@ -1,6 +1,6 @@
-export const gameBoardClicked = (text) => {
+export const nextPlayer = (text) => {
   return {
-    type: 'GAME_BOARD_CLICKED',
+    type: 'NEXT_PLAYER',
     text
   }
 }

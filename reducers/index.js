@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import gameboard from './gameboard'
+import tiles from './tiles'
 
 const tictactoeApp = combineReducers({
-  gameboard
+  tiles
 })
 
 export default tictactoeApp

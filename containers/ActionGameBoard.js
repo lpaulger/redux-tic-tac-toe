@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import { gameBoardClicked } from '../actions'
+import { nextPlayer } from '../actions'
 import GameBoard from '../components/GameBoard'
 
 const mapStateToProps = (state) => {
   return {
-    text: state.gameboard
+    tiles: state.tiles
   };
 }
 
@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onClick: () => {
       // change turn to next player
-      dispatch(gameBoardClicked("hello"))
+      dispatch(nextPlayer("hello"))
     }
   }
 }
